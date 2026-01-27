@@ -15,7 +15,8 @@
                 <h1 class="text-3xl md:text-5xl font-bold text-slate-900 mb-2">Our Capabilities</h1>
                 <p class="text-lg text-slate-600">State-of-the-art manufacturing facilities and expertise</p>
             </div>
-        </section>
+
+                
 
         <!-- Main Content -->
         <section class="py-16 bg-slate-50">
@@ -37,7 +38,34 @@
                     </div>
                 </div>
             </div>
-        </section>
+                </section>
+
+                <!-- Capabilities Gallery Section (moved below Quality Management) -->
+                <?php
+                $capabilities_gallery = [
+                    ["img" => "https://source.unsplash.com/600x400/?factory,industry", "alt" => "Factory"],
+                    ["img" => "https://source.unsplash.com/600x400/?machinery,manufacturing", "alt" => "Machinery"],
+                    ["img" => "https://source.unsplash.com/600x400/?workshop,production", "alt" => "Workshop"],
+                    ["img" => "https://source.unsplash.com/600x400/?automation,robotics", "alt" => "Automation"],
+                    ["img" => "https://source.unsplash.com/600x400/?quality,inspection", "alt" => "Quality Inspection"],
+                    ["img" => "https://source.unsplash.com/600x400/?assembly,line", "alt" => "Assembly Line"],
+                ];
+                ?>
+                <section class="py-16 bg-slate-50">
+                    <div class="max-w-7xl mx-auto px-4">
+                        <div class="text-center mb-10">
+                            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-2">Capabilities Gallery</h2>
+                            <p class="text-lg text-slate-600">A glimpse into our advanced facilities and operations</p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                            <?php foreach ($capabilities_gallery as $item): ?>
+                                <div class="overflow-hidden rounded-2xl shadow bg-white">
+                                    <img src="<?= htmlspecialchars($item['img']) ?>" alt="<?= htmlspecialchars($item['alt']) ?>" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </section>
 
         <!-- Capabilities Grid -->
         <section class="py-16 bg-white">
