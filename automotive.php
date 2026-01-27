@@ -222,24 +222,61 @@
         <section class="py-16 bg-white">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Why Choose Topgrip for Automotive Solutions</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+                        Why Choose Topgrip for Automotive Solutions
+                    </h2>
                 </div>
+
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 flex flex-col items-center text-center">
-                        <div class="text-4xl mb-2">🔧</div>
-                        <h4 class="text-lg font-semibold mb-1 text-slate-900">Precision Engineering</h4>
-                        <p class="text-slate-700">Our fixtures are engineered to exact specifications, ensuring perfect fit and function in your manufacturing process.</p>
+
+                    <!-- Precision Engineering -->
+                    <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8 shadow-sm
+                                flex flex-col items-center text-center hover:shadow-md transition">
+                        <div class="h-12 w-12 flex items-center justify-center rounded-2xl
+                                    bg-white border border-slate-200 mb-4">
+                            <i class="fa-solid fa-gears text-slate-900 text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-1 text-slate-900">
+                            Precision Engineering
+                        </h4>
+                        <p class="text-slate-700 leading-relaxed">
+                            Our fixtures are engineered to exact specifications, ensuring perfect fit
+                            and function in your manufacturing process.
+                        </p>
                     </div>
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 flex flex-col items-center text-center">
-                        <div class="text-4xl mb-2">⚡</div>
-                        <h4 class="text-lg font-semibold mb-1 text-slate-900">Fast Turnaround</h4>
-                        <p class="text-slate-700">Efficient production processes and experienced team ensure timely delivery without compromising quality.</p>
+
+                    <!-- Fast Turnaround -->
+                    <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8 shadow-sm
+                                flex flex-col items-center text-center hover:shadow-md transition">
+                        <div class="h-12 w-12 flex items-center justify-center rounded-2xl
+                                    bg-white border border-slate-200 mb-4">
+                            <i class="fa-solid fa-bolt text-slate-900 text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-1 text-slate-900">
+                            Fast Turnaround
+                        </h4>
+                        <p class="text-slate-700 leading-relaxed">
+                            Efficient production processes and an experienced team ensure timely
+                            delivery without compromising quality.
+                        </p>
                     </div>
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 flex flex-col items-center text-center">
-                        <div class="text-4xl mb-2">✅</div>
-                        <h4 class="text-lg font-semibold mb-1 text-slate-900">Quality Certified</h4>
-                        <p class="text-slate-700">ISO 9001:2015 certified quality management system ensures consistent, high-quality products.</p>
+
+                    <!-- Quality Certified -->
+                    <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8 shadow-sm
+                                flex flex-col items-center text-center hover:shadow-md transition">
+                        <div class="h-12 w-12 flex items-center justify-center rounded-2xl
+                                    bg-white border border-slate-200 mb-4">
+                            <i class="fa-solid fa-shield-halved text-slate-900 text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-1 text-slate-900">
+                            Quality Certified
+                        </h4>
+                        <p class="text-slate-700 leading-relaxed">
+                            ISO 9001:2015 certified quality management system ensures consistent,
+                            high-quality products.
+                        </p>
                     </div>
+
                 </div>
             </div>
         </section>
