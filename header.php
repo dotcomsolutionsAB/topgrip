@@ -9,9 +9,9 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://topgrip.co.in/">
     <title>Topgrip Industries - Industrial Solutions Provider</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    
+    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
@@ -46,42 +46,100 @@
     }
     </script>
 </head>
-<style>
-    .logo-img {
-        height: 40px;        /* adjust if needed */
-        width: auto;
-        display: block;
-    }
-</style>
+<!-- Tailwind CSS is used for all styling. No custom CSS needed. -->
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="header-content">
-            <a href="/" class="logo">
-                <img src="assets/images/logo.png" alt="Topgrip Industries" class="logo-img">
+    <header class="sticky top-0 z-[9999] bg-white/90 backdrop-blur border-b border-black/10">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="h-20 flex items-center justify-between gap-4">
+
+        <!-- Logo -->
+        <a href="/" class="flex items-center">
+            <img src="assets/images/logo.png" alt="Topgrip Industries" class="h-10 w-auto">
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-2">
+            <a href="index" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-800 hover:bg-slate-100">Home</a>
+
+            <!-- Dropdown -->
+            <div class="relative group">
+            <a href="#" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-800 hover:bg-slate-100 inline-flex items-center gap-2">
+                Solutions <span class="text-xs">▼</span>
             </a>
-            <nav class="nav">
-                <button class="menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="index">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#">Solutions <span>▼</span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="solutions/automotive">Automotive</a></li>
-                            <li><a href="solutions/railways">Railways</a></li>
-                            <li><a href="solutions/oil-gas">Oil & Gas</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="capabilities">Capabilities</a></li>
-                    <li><a href="news">News</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="get-quote" class="btn btn-primary">Get a Quote</a></li>
-                </ul>
-            </nav>
+
+            <div class="absolute left-0 top-full pt-2 opacity-0 translate-y-1 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition">
+                <div class="w-56 rounded-2xl bg-white shadow-xl border border-black/10 overflow-hidden">
+                <a href="solutions/automotive" class="block px-4 py-3 text-sm text-slate-800 hover:bg-slate-50">Automotive</a>
+                <a href="solutions/railways" class="block px-4 py-3 text-sm text-slate-800 hover:bg-slate-50">Railways</a>
+                <a href="solutions/oil-gas" class="block px-4 py-3 text-sm text-slate-800 hover:bg-slate-50">Oil &amp; Gas</a>
+                </div>
+            </div>
+            </div>
+
+            <a href="capabilities" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-800 hover:bg-slate-100">Capabilities</a>
+            <a href="news" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-800 hover:bg-slate-100">News</a>
+            <a href="about" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-800 hover:bg-slate-100">About</a>
+            <a href="contact" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-800 hover:bg-slate-100">Contact</a>
+
+            <a href="get-quote"
+            class="ml-2 inline-flex items-center justify-center rounded-xl bg-slate-900 text-white px-5 py-2.5 text-sm font-semibold hover:bg-slate-800 transition">
+            Get a Quote
+            </a>
+        </nav>
+
+        <!-- Mobile Toggle -->
+        <button id="menuBtn"
+                class="lg:hidden inline-flex items-center justify-center h-11 w-11 rounded-xl border border-black/10 hover:bg-slate-100 transition"
+                aria-label="Toggle menu">
+            <!-- simple hamburger -->
+            <span class="block w-5 h-[2px] bg-slate-900 relative">
+            <span class="absolute -top-2 left-0 w-5 h-[2px] bg-slate-900"></span>
+            <span class="absolute top-2 left-0 w-5 h-[2px] bg-slate-900"></span>
+            </span>
+        </button>
+
         </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="lg:hidden hidden pb-5">
+        <div class="mt-2 rounded-2xl border border-black/10 bg-white shadow-sm overflow-hidden">
+            <a href="index" class="block px-4 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-50">Home</a>
+
+            <!-- Mobile dropdown -->
+            <details class="group border-t border-black/10">
+            <summary class="cursor-pointer px-4 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-50 flex items-center justify-between">
+                <span>Solutions</span>
+                <span class="text-xs group-open:rotate-180 transition">▼</span>
+            </summary>
+            <div class="pb-2">
+                <a href="solutions/automotive" class="block px-6 py-2 text-sm text-slate-700 hover:bg-slate-50">Automotive</a>
+                <a href="solutions/railways" class="block px-6 py-2 text-sm text-slate-700 hover:bg-slate-50">Railways</a>
+                <a href="solutions/oil-gas" class="block px-6 py-2 text-sm text-slate-700 hover:bg-slate-50">Oil &amp; Gas</a>
+            </div>
+            </details>
+
+            <a href="capabilities" class="block px-4 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-50 border-t border-black/10">Capabilities</a>
+            <a href="news" class="block px-4 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-50 border-t border-black/10">News</a>
+            <a href="about" class="block px-4 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-50 border-t border-black/10">About</a>
+            <a href="contact" class="block px-4 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-50 border-t border-black/10">Contact</a>
+
+            <div class="p-4 border-t border-black/10">
+            <a href="get-quote"
+                class="w-full inline-flex items-center justify-center rounded-xl bg-slate-900 text-white px-5 py-3 text-sm font-semibold hover:bg-slate-800 transition">
+                Get a Quote
+            </a>
+            </div>
+        </div>
+        </div>
+
+    </div>
     </header>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
