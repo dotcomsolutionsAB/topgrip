@@ -46,12 +46,19 @@
     }
     </script>
 </head>
+<style>
+    .logo-img {
+        height: 40px;        /* adjust if needed */
+        width: auto;
+        display: block;
+    }
+</style>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="header-content">
             <a href="/" class="logo">
-                <span>Topgrip Industries</span>
+                <img src="assets/images/logo.png" alt="Topgrip Industries" class="logo-img">
             </a>
             <nav class="nav">
                 <button class="menu-toggle" aria-label="Toggle menu">
@@ -60,7 +67,7 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu">
-                    <li><a href="/">Home</a></li>
+                    <li><a href="index">Home</a></li>
                     <li class="dropdown">
                         <a href="#">Solutions <span>▼</span></a>
                         <ul class="dropdown-menu">
