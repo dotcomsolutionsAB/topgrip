@@ -120,152 +120,150 @@
             </div>
         </section>
 
+        <!-- Certifications Section -->
+        <?php include 'inc/certificate_and_standard.php'; ?>
 
-                <!-- Certifications Section -->
-                <?php include 'inc/certificate_and_standard.php'; ?>
+        <!-- Certificate Slider Section -->
+        <?php
+            $certificate_slides = [
+                ["img" => "assets/images/cirtificate/cirtf_of registration.jpg", "alt" => "Certificate 1"],
+                ["img" => "assets/images/cirtificate/D-U-N-S-Topgrip-Industries.jpg", "alt" => "Certificate 2"],
+                ["img" => "assets/images/cirtificate/IEC-.jpg", "alt" => "Certificate 3"],
+                ["img" => "assets/images/cirtificate/ISOCertificateQMS.jpg", "alt" => "Certificate 4"],
+            ];
+        ?>
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-                <!-- Certificate Slider Section -->
-                <?php
-                    $certificate_slides = [
-                        ["img" => "assets/images/cirtificate/cirtf_of registration.jpg", "alt" => "Certificate 1"],
-                        ["img" => "assets/images/cirtificate/D-U-N-S-Topgrip-Industries.jpg", "alt" => "Certificate 2"],
-                        ["img" => "assets/images/cirtificate/IEC-.jpg", "alt" => "Certificate 3"],
-                        ["img" => "assets/images/cirtificate/ISOCertificateQMS.jpg", "alt" => "Certificate 4"],
-                    ];
-                ?>
-                <section class="py-16 bg-white">
-                    <div class="max-w-7xl mx-auto px-4">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <!-- Left -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-3">Our Certificates</h2>
+                    <p class="text-lg text-slate-600">Recognized for quality and standards</p>
+                </div>
 
-                        <!-- Left -->
-                        <div>
-                            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-3">Our Certificates</h2>
-                            <p class="text-lg text-slate-600">Recognized for quality and standards</p>
-                        </div>
+                <!-- Right Slider -->
+                <div class="relative">
+                    <!-- Frame -->
+                    <div id="cert-slider"
+                        class="relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
 
-                        <!-- Right Slider -->
-                        <div class="relative">
-                            <!-- Frame -->
-                            <div id="cert-slider"
-                                class="relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-
-                            <!-- Track -->
-                            <div id="cert-slider-track"
-                                class="flex transition-transform duration-700 ease-in-out"
-                                style="will-change: transform;">
-                                <?php foreach ($certificate_slides as $slide): ?>
-                                <div class="w-full shrink-0">
-                                    <div class="p-5 sm:p-7">
-                                    <div
-                                        class="cert-slide-img rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center
-                                            h-[320px] sm:h-[380px] lg:h-[420px]">
-                                        <img src="<?= htmlspecialchars($slide['img']) ?>"
-                                            alt="<?= htmlspecialchars($slide['alt']) ?>"
-                                            class="max-h-full max-w-full object-contain p-2" />
-                                    </div>
-                                    </div>
-                                </div>
-                                <?php endforeach; ?>
-                            </div>
-
-                            <!-- Arrows -->
-                            <button type="button" id="cert-prev"
-                                    class="absolute left-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-black/50 text-white
-                                            flex items-center justify-center hover:bg-black/60 transition">
-                                ‹
-                            </button>
-                            <button type="button" id="cert-next"
-                                    class="absolute right-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-black/50 text-white
-                                            flex items-center justify-center hover:bg-black/60 transition">
-                                ›
-                            </button>
-
-                            <!-- Dots -->
-                            <div class="absolute inset-x-0 bottom-4 flex justify-center gap-2" id="cert-slider-dots">
-                                <?php foreach ($certificate_slides as $i => $slide): ?>
-                                <button type="button"
-                                        class="w-2.5 h-2.5 rounded-full bg-slate-300 transition"
-                                        data-cert-dot="<?= $i ?>"></button>
-                                <?php endforeach; ?>
+                    <!-- Track -->
+                    <div id="cert-slider-track"
+                        class="flex transition-transform duration-700 ease-in-out"
+                        style="will-change: transform;">
+                        <?php foreach ($certificate_slides as $slide): ?>
+                        <div class="w-full shrink-0">
+                            <div class="p-5 sm:p-7">
+                            <div
+                                class="cert-slide-img rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center
+                                    h-[320px] sm:h-[380px] lg:h-[420px]">
+                                <img src="<?= htmlspecialchars($slide['img']) ?>"
+                                    alt="<?= htmlspecialchars($slide['alt']) ?>"
+                                    class="max-h-full max-w-full object-contain p-2" />
                             </div>
                             </div>
                         </div>
-
-                        </div>
+                        <?php endforeach; ?>
                     </div>
-                </section>
-                <style>
-                    .cert-slide-img.active {
-                        box-shadow: 0 0 0 6px rgb(15 23 42), 0 0 24px 6px rgb(15 23 42);
-                        animation: cert-glow 1.5s infinite alternate;
-                    }
-                    @keyframes cert-glow {
-                        from { box-shadow: 0 0 0 6px rgb(15 23 42), 0 0 12px 6px rgb(15 23 42); }
-                        to { box-shadow: 0 0 0 12px rgb(15 23 42), 0 0 32px 12px rgb(15 23 42); }
-                    }
-                </style>
-                <script>
-                    (function() {
-                    const slider = document.getElementById('cert-slider');
-                    const track = document.getElementById('cert-slider-track');
-                    const slides = Array.from(track.children);
-                    const dots = Array.from(document.querySelectorAll('#cert-slider-dots button'));
-                    const prev = document.getElementById('cert-prev');
-                    const next = document.getElementById('cert-next');
 
-                    let idx = 0;
-                    let interval = null;
-                    let paused = false;
+                    <!-- Arrows -->
+                    <button type="button" id="cert-prev"
+                            class="absolute left-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-black/50 text-white
+                                    flex items-center justify-center hover:bg-black/60 transition">
+                        ‹
+                    </button>
+                    <button type="button" id="cert-next"
+                            class="absolute right-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-black/50 text-white
+                                    flex items-center justify-center hover:bg-black/60 transition">
+                        ›
+                    </button>
 
-                    function slideWidth() {
-                        return slider.getBoundingClientRect().width;
-                    }
+                    <!-- Dots -->
+                    <div class="absolute inset-x-0 bottom-4 flex justify-center gap-2" id="cert-slider-dots">
+                        <?php foreach ($certificate_slides as $i => $slide): ?>
+                        <button type="button"
+                                class="w-2.5 h-2.5 rounded-full bg-slate-300 transition"
+                                data-cert-dot="<?= $i ?>"></button>
+                        <?php endforeach; ?>
+                    </div>
+                    </div>
+                </div>
 
-                    function goTo(i) {
-                        idx = (i + slides.length) % slides.length;
-                        const x = idx * slideWidth();
-                        track.style.transform = `translateX(-${x}px)`;
+                </div>
+            </div>
+        </section>
+        <style>
+            .cert-slide-img.active {
+                box-shadow: 0 0 0 6px rgb(15 23 42), 0 0 24px 6px rgb(15 23 42);
+                animation: cert-glow 1.5s infinite alternate;
+            }
+            @keyframes cert-glow {
+                from { box-shadow: 0 0 0 6px rgb(15 23 42), 0 0 12px 6px rgb(15 23 42); }
+                to { box-shadow: 0 0 0 12px rgb(15 23 42), 0 0 32px 12px rgb(15 23 42); }
+            }
+        </style>
+        <script>
+            (function() {
+            const slider = document.getElementById('cert-slider');
+            const track = document.getElementById('cert-slider-track');
+            const slides = Array.from(track.children);
+            const dots = Array.from(document.querySelectorAll('#cert-slider-dots button'));
+            const prev = document.getElementById('cert-prev');
+            const next = document.getElementById('cert-next');
 
-                        // Active styles
-                        slides.forEach((s, j) => {
-                        const box = s.querySelector('.cert-slide-img');
-                        if (!box) return;
-                        box.classList.toggle('active', j === idx);
-                        });
+            let idx = 0;
+            let interval = null;
+            let paused = false;
 
-                        dots.forEach((d, j) => {
-                        d.classList.toggle('bg-yellow-400', j === idx);
-                        d.classList.toggle('bg-slate-300', j !== idx);
-                        });
-                    }
+            function slideWidth() {
+                return slider.getBoundingClientRect().width;
+            }
 
-                    function nextSlide() { goTo(idx + 1); }
-                    function prevSlide() { goTo(idx - 1); }
+            function goTo(i) {
+                idx = (i + slides.length) % slides.length;
+                const x = idx * slideWidth();
+                track.style.transform = `translateX(-${x}px)`;
 
-                    function start() {
-                        if (interval) clearInterval(interval);
-                        interval = setInterval(() => { if (!paused) nextSlide(); }, 3000);
-                    }
+                // Active styles
+                slides.forEach((s, j) => {
+                const box = s.querySelector('.cert-slide-img');
+                if (!box) return;
+                box.classList.toggle('active', j === idx);
+                });
 
-                    // Dots
-                    dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); }));
+                dots.forEach((d, j) => {
+                d.classList.toggle('bg-yellow-400', j === idx);
+                d.classList.toggle('bg-slate-300', j !== idx);
+                });
+            }
 
-                    // Arrows
-                    next.addEventListener('click', () => { nextSlide(); start(); });
-                    prev.addEventListener('click', () => { prevSlide(); start(); });
+            function nextSlide() { goTo(idx + 1); }
+            function prevSlide() { goTo(idx - 1); }
 
-                    // Pause hover
-                    slider.addEventListener('mouseenter', () => paused = true);
-                    slider.addEventListener('mouseleave', () => paused = false);
+            function start() {
+                if (interval) clearInterval(interval);
+                interval = setInterval(() => { if (!paused) nextSlide(); }, 3000);
+            }
 
-                    // Resize fix
-                    window.addEventListener('resize', () => goTo(idx));
+            // Dots
+            dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); }));
 
-                    goTo(0);
-                    start();
-                    })();
-                </script>
+            // Arrows
+            next.addEventListener('click', () => { nextSlide(); start(); });
+            prev.addEventListener('click', () => { prevSlide(); start(); });
 
+            // Pause hover
+            slider.addEventListener('mouseenter', () => paused = true);
+            slider.addEventListener('mouseleave', () => paused = false);
+
+            // Resize fix
+            window.addEventListener('resize', () => goTo(idx));
+
+            goTo(0);
+            start();
+            })();
+        </script>
         
         <!-- CTA Section -->
         <section class="py-16 bg-slate-900">
