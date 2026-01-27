@@ -67,7 +67,7 @@
         <div class="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/70 via-black/45 to-black/25 md:bg-gradient-to-r md:from-black/70 md:via-black/40 md:to-black/10"></div>
 
         <!-- Content: left bottom -->
-        <div class="absolute left-0 bottom-0 z-20 w-full max-w-2xl px-8 pb-12 sm:pb-16 text-left">
+        <div class="absolute left-10 bottom-0 z-20 w-full max-w-2xl px-8 pb-12 sm:pb-16 text-left">
           <div class="text-white">
             <h1 class="text-[32px] sm:text-[40px] md:text-[56px] font-extrabold leading-[1.08] tracking-tight mb-3">
               ${s.title}
