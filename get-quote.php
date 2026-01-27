@@ -11,7 +11,7 @@
 
         <!-- Hero Section -->
         <section class="py-12 bg-white">
-            <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="max-w-7xl mx-auto px-4 text-left">
                 <h1 class="text-3xl md:text-5xl font-bold text-slate-900 mb-2">Request a Quote</h1>
                 <p class="text-lg text-slate-600">We work on the forefront of innovation and technology to take products from an idea all the way to the end consumer</p>
             </div>

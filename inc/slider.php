@@ -42,7 +42,7 @@
       title: "Built for industry standards",
       text: "Automotive, Railways, and Oil & Gas solutions with quality at the core.",
       buttonText: "View solutions",
-      buttonLink: "solutions/automotive",
+      buttonLink: "automotive",
       image: "assets/images/slider3.jpg"
     }
   ];

@@ -11,21 +11,21 @@
                 'desc' => 'We manufacture & assemble Automotive fixtures. (BIW & Powertrain).',
                 'img' => 'assets/images/home_about_1.jpg',
                 'alt' => 'Automotive',
-                'link' => 'solutions/automotive',
+                'link' => 'automotive',
             ],
             [
                 'title' => 'Railways',
                 'desc' => 'Topgrip has been working with Indian Railways since past 45 years.',
                 'img' => 'assets/images/home_about_2.jpg',
                 'alt' => 'Railways',
-                'link' => 'solutions/railways',
+                'link' => 'railways',
             ],
             [
                 'title' => 'Oil & Gas',
                 'desc' => 'Having vast experience in the manufacturing industry in Railways & Automotive. Topgrip is now venturing into the Oil & Gas market.',
                 'img' => 'assets/images/home_about_3.jpg',
                 'alt' => 'Oil & Gas',
-                'link' => 'solutions/oil-gas',
+                'link' => 'oil-gas',
             ],
         ];
         ?>

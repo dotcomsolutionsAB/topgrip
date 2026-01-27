@@ -11,7 +11,7 @@
 
         <!-- Hero Section -->
         <section class="py-12 bg-white">
-            <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="max-w-7xl mx-auto px-4 text-left">
                 <h1 class="text-3xl md:text-5xl font-bold text-slate-900 mb-2">Our Capabilities</h1>
                 <p class="text-lg text-slate-600">State-of-the-art manufacturing facilities and expertise</p>
             </div>
@@ -81,28 +81,8 @@
         </section>
 
         <!-- Certifications Section -->
-        <section class="py-16 bg-slate-50">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Certifications & Standards</h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-2xl shadow p-8 text-center">
-                        <h3 class="text-xl font-semibold mb-2 text-slate-900">ISO 9001:2015</h3>
-                        <p class="text-slate-700">Certified Quality Management System</p>
-                    </div>
-                    <div class="bg-white rounded-2xl shadow p-8 text-center">
-                        <h3 class="text-xl font-semibold mb-2 text-slate-900">Number #1</h3>
-                        <p class="text-slate-700">Supplier in Quality</p>
-                    </div>
-                    <div class="bg-white rounded-2xl shadow p-8 text-center">
-                        <h3 class="text-xl font-semibold mb-2 text-slate-900">Leading Provider</h3>
-                        <p class="text-slate-700">Of Industrial Solutions</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <?php include 'inc/certificate_and_standard.php'; ?>
+        
         <!-- CTA Section -->
         <section class="py-16 bg-slate-900">
             <div class="max-w-2xl mx-auto px-4 text-center">

@@ -20,9 +20,9 @@
                     <div>
                         <h4 class="text-lg font-bold mb-3 tracking-wide">SOLUTIONS</h4>
                         <ul class="space-y-2 text-sm">
-                            <li><a href="solutions/automotive" class="hover:underline">Automotive</a></li>
-                            <li><a href="solutions/railways" class="hover:underline">Railways</a></li>
-                            <li><a href="solutions/oil-gas" class="hover:underline">Oil &amp; Gas</a></li>
+                            <li><a href="automotive" class="hover:underline">Automotive</a></li>
+                            <li><a href="railways" class="hover:underline">Railways</a></li>
+                            <li><a href="oil-gas" class="hover:underline">Oil &amp; Gas</a></li>
                         </ul>
                     </div>
                     <!-- Get in Touch -->

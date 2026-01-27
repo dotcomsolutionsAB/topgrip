@@ -1,4 +1,4 @@
-<?php include '../header.php'; ?>
+<?php include 'header.php'; ?>
 
         <!-- Breadcrumbs -->
         <nav class="bg-slate-50 py-3 text-sm" aria-label="Breadcrumb">
@@ -13,7 +13,7 @@
 
         <!-- Hero Section -->
         <section class="py-12 bg-white">
-            <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="max-w-7xl mx-auto px-4 text-left">
                 <h1 class="text-3xl md:text-5xl font-bold text-slate-900 mb-2">Automotive Solutions</h1>
                 <p class="text-lg text-slate-600">Manufacturing & assembly of Automotive fixtures for BIW & Powertrain applications</p>
             </div>
@@ -81,4 +81,4 @@
             </div>
         </section>
 
-<?php include '../footer.php'; ?>
+<?php include 'footer.php'; ?>

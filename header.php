@@ -70,9 +70,9 @@
 
             <div class="absolute left-0 top-full pt-2 opacity-0 translate-y-1 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition">
                 <div class="w-56 rounded-2xl bg-white shadow-xl border border-black/10 overflow-hidden">
-                <a href="solutions/automotive" class="block px-4 py-3 text-sm text-slate-800 hover:bg-slate-50">Automotive</a>
-                <a href="solutions/railways" class="block px-4 py-3 text-sm text-slate-800 hover:bg-slate-50">Railways</a>
-                <a href="solutions/oil-gas" class="block px-4 py-3 text-sm text-slate-800 hover:bg-slate-50">Oil &amp; Gas</a>
+                <a href="automotive" class="block px-4 py-3 text-sm text-slate-800 hover:bg-slate-50">Automotive</a>
+                <a href="railways" class="block px-4 py-3 text-sm text-slate-800 hover:bg-slate-50">Railways</a>
+                <a href="oil-gas" class="block px-4 py-3 text-sm text-slate-800 hover:bg-slate-50">Oil &amp; Gas</a>
                 </div>
             </div>
             </div>
@@ -113,9 +113,9 @@
                 <span class="text-xs group-open:rotate-180 transition">▼</span>
             </summary>
             <div class="pb-2">
-                <a href="solutions/automotive" class="block px-6 py-2 text-sm text-slate-700 hover:bg-slate-50">Automotive</a>
-                <a href="solutions/railways" class="block px-6 py-2 text-sm text-slate-700 hover:bg-slate-50">Railways</a>
-                <a href="solutions/oil-gas" class="block px-6 py-2 text-sm text-slate-700 hover:bg-slate-50">Oil &amp; Gas</a>
+                <a href="automotive" class="block px-6 py-2 text-sm text-slate-700 hover:bg-slate-50">Automotive</a>
+                <a href="railways" class="block px-6 py-2 text-sm text-slate-700 hover:bg-slate-50">Railways</a>
+                <a href="oil-gas" class="block px-6 py-2 text-sm text-slate-700 hover:bg-slate-50">Oil &amp; Gas</a>
             </div>
             </details>
 

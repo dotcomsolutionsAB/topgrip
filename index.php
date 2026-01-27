@@ -10,7 +10,7 @@
                 <div class="flex flex-col justify-center bg-white rounded-2xl shadow p-8">
                     <h2 class="text-2xl md:text-3xl font-bold mb-3 text-gray-900">Turning big ideas into great products</h2>
                     <p class="mb-5 text-gray-700">We are a world-class team of designers and industrial engineers.</p>
-                    <a href="solutions/automotive" class="inline-block px-6 py-2 rounded-xl bg-slate-100 text-slate-800 font-semibold hover:bg-slate-200 transition">View our Solutions</a>
+                    <a href="automotive" class="inline-block px-6 py-2 rounded-xl bg-slate-100 text-slate-800 font-semibold hover:bg-slate-200 transition">View our Solutions</a>
                 </div>
                 <div class="flex flex-col justify-center bg-white rounded-2xl shadow p-8">
                     <h2 class="text-2xl md:text-3xl font-bold mb-3 text-gray-900">If it can be imagined, it can be made</h2>
