@@ -15,13 +15,13 @@
                 <h1 class="text-3xl md:text-5xl font-bold text-slate-900 mb-2">Our Capabilities</h1>
                 <p class="text-lg text-slate-600">State-of-the-art manufacturing facilities and expertise</p>
             </div>
-
+        </section>
                 
 
         <!-- Main Content -->
         <section class="py-16 bg-slate-50">
             <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center mb-10">
+                <div class="text-left mb-10">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-2">Manufacturing Excellence</h2>
                     <p class="text-lg text-slate-600">Three facilities in India with Kolkata as our head office</p>
                 </div>
@@ -80,45 +80,62 @@
         </section>
 
         <!-- Capabilities Grid -->
-        <section class="py-16 bg-white">
+        <section class="py-16 bg-white" id="offerGrid">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">What We Offer</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">What We Offer</h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 flex flex-col items-center text-center">
-                        <div class="text-4xl mb-2">🏭</div>
-                        <h4 class="text-lg font-semibold mb-1 text-slate-900">Manufacturing</h4>
-                        <p class="text-slate-700">Wide variety of products for Railways, Automotive and Oil & Gas sectors manufactured to exact specifications.</p>
-                    </div>
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 flex flex-col items-center text-center">
-                        <div class="text-4xl mb-2">🔧</div>
-                        <h4 class="text-lg font-semibold mb-1 text-slate-900">Assembly</h4>
-                        <p class="text-slate-700">Complete assembly services including Automotive fixtures for BIW & Powertrain applications.</p>
-                    </div>
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 flex flex-col items-center text-center">
-                        <div class="text-4xl mb-2">✅</div>
-                        <h4 class="text-lg font-semibold mb-1 text-slate-900">Quality Assurance</h4>
-                        <p class="text-slate-700">ISO 9001:2015 certified quality management system ensuring consistent quality in every product.</p>
-                    </div>
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 flex flex-col items-center text-center">
-                        <div class="text-4xl mb-2">👥</div>
-                        <h4 class="text-lg font-semibold mb-1 text-slate-900">Skilled Personnel</h4>
-                        <p class="text-slate-700">Competent and skilled personnel handling advanced machineries and equipment.</p>
-                    </div>
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 flex flex-col items-center text-center">
-                        <div class="text-4xl mb-2">🔍</div>
-                        <h4 class="text-lg font-semibold mb-1 text-slate-900">Quality Control</h4>
-                        <p class="text-slate-700">Materials sourced from tried and trusted suppliers meeting our exacting standards of quality control.</p>
-                    </div>
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 flex flex-col items-center text-center">
-                        <div class="text-4xl mb-2">🚀</div>
-                        <h4 class="text-lg font-semibold mb-1 text-slate-900">Custom Solutions</h4>
-                        <p class="text-slate-700">Most up-to-date, sustainable custom manufacturing solutions tailored to customer needs.</p>
-                    </div>
-                </div>
+
+                <div id="offerCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
             </div>
         </section>
+        <script>
+        // ✅ JSON with Font Awesome icon classes
+        const OFFERS = [
+            {
+            iconClass: "fa-solid fa-industry",
+            title: "Manufacturing",
+            desc: "Wide variety of products for Railways, Automotive and Oil & Gas sectors manufactured to exact specifications."
+            },
+            {
+            iconClass: "fa-solid fa-screwdriver-wrench",
+            title: "Assembly",
+            desc: "Complete assembly services including Automotive fixtures for BIW & Powertrain applications."
+            },
+            {
+            iconClass: "fa-solid fa-shield-halved",
+            title: "Quality Assurance",
+            desc: "ISO 9001:2015 certified quality management system ensuring consistent quality in every product."
+            },
+            {
+            iconClass: "fa-solid fa-users-gear",
+            title: "Skilled Personnel",
+            desc: "Competent and skilled personnel handling advanced machineries and equipment."
+            },
+            {
+            iconClass: "fa-solid fa-magnifying-glass",
+            title: "Quality Control",
+            desc: "Materials sourced from tried and trusted suppliers meeting our exacting standards of quality control."
+            },
+            {
+            iconClass: "fa-solid fa-rocket",
+            title: "Custom Solutions",
+            desc: "Most up-to-date, sustainable custom manufacturing solutions tailored to customer needs."
+            }
+        ];
+
+        const offerCards = document.getElementById("offerCards");
+
+        offerCards.innerHTML = OFFERS.map(item => `
+            <div class="group bg-slate-50 rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-md transition">
+            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white border border-slate-200 text-slate-900 group-hover:scale-105 transition">
+                <i class="${item.iconClass} text-[20px]"></i>
+            </div>
+            <h4 class="mt-4 text-lg font-semibold text-slate-900">${item.title}</h4>
+            <p class="mt-2 text-slate-700 leading-relaxed">${item.desc}</p>
+            </div>
+        `).join("");
+        </script>
 
         <!-- Certifications Section -->
         <?php include 'inc/certificate_and_standard.php'; ?>

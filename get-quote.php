@@ -87,27 +87,55 @@
 
         <!-- Contact Info Section -->
         <section class="py-16 bg-white">
-            <div class="max-w-4xl mx-auto px-4">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Prefer to Talk?</h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 text-center">
-                        <h4 class="text-lg font-semibold mb-2 text-slate-900">Call Us</h4>
-                        <p><a href="tel:+9104023075253" class="text-blue-600 hover:underline">+91 040 23075253</a></p>
-                        <p class="text-slate-500 text-sm mt-2">Mon-Sat, 9am until 6pm</p>
-                    </div>
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 text-center">
-                        <h4 class="text-lg font-semibold mb-2 text-slate-900">Email Us</h4>
-                        <p><a href="mailto:info@topgrip.co.in" class="text-blue-600 hover:underline">info@topgrip.co.in</a></p>
-                        <p class="text-slate-500 text-sm mt-2">We reply within 24 hours</p>
-                    </div>
-                    <div class="bg-slate-50 rounded-2xl shadow p-8 text-center">
-                        <h4 class="text-lg font-semibold mb-2 text-slate-900">Visit Us</h4>
-                        <p class="text-slate-700 text-sm">Plot No-78, Shed No 24-711<br>Balangar, Hyderabad</p>
-                    </div>
-                </div>
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Prefer to Talk?</h2>
             </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+
+            <!-- Call -->
+            <div class="bg-slate-50 rounded-2xl border border-slate-200 shadow-sm p-8 text-center hover:shadow-md transition">
+                <div class="mx-auto mb-4 h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                <i class="fa-solid fa-phone text-slate-900 text-xl"></i>
+                </div>
+                <h4 class="text-lg font-semibold mb-2 text-slate-900">Call Us</h4>
+                <p>
+                <a href="tel:+9104023075253" class="text-blue-600 hover:underline font-semibold">
+                    +91 040 23075253
+                </a>
+                </p>
+                <p class="text-slate-500 text-sm mt-2">Mon-Sat, 9am until 6pm</p>
+            </div>
+
+            <!-- Email -->
+            <div class="bg-slate-50 rounded-2xl border border-slate-200 shadow-sm p-8 text-center hover:shadow-md transition">
+                <div class="mx-auto mb-4 h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                <i class="fa-solid fa-envelope text-slate-900 text-xl"></i>
+                </div>
+                <h4 class="text-lg font-semibold mb-2 text-slate-900">Email Us</h4>
+                <p>
+                <a href="mailto:info@topgrip.co.in" class="text-blue-600 hover:underline font-semibold">
+                    info@topgrip.co.in
+                </a>
+                </p>
+                <p class="text-slate-500 text-sm mt-2">We reply within 24 hours</p>
+            </div>
+
+            <!-- Visit -->
+            <div class="bg-slate-50 rounded-2xl border border-slate-200 shadow-sm p-8 text-center hover:shadow-md transition">
+                <div class="mx-auto mb-4 h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                <i class="fa-solid fa-location-dot text-slate-900 text-xl"></i>
+                </div>
+                <h4 class="text-lg font-semibold mb-2 text-slate-900">Visit Us</h4>
+                <p class="text-slate-700 text-sm leading-relaxed">
+                Plot No-78, Shed No 24-711<br>
+                Balangar, Hyderabad
+                </p>
+            </div>
+
+            </div>
+        </div>
         </section>
 
 <?php include 'footer.php'; ?>
