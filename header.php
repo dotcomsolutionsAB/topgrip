@@ -8,6 +8,7 @@
     <meta name="author" content="Topgrip Industries">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://topgrip.co.in/">
+    <link rel="icon" href="assets/images/fav.png" type="image/x-icon">
     <title>Topgrip Industries - Industrial Solutions Provider</title>
     <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->

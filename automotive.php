@@ -21,54 +21,52 @@
 
         <!-- Main Content -->
         <section class="py-16 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
-            <!-- LEFT: Text -->
-            <div>
-                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
-                    Automotive Manufacturing Excellence
-                </h2>
-                <p class="text-slate-700 mb-2">We manufacture &amp; assemble Automotive fixtures. (BIW &amp; Powertrain).</p>
-                <p class="text-slate-700 mb-2">
-                    Topgrip Industries brings decades of manufacturing expertise to the automotive sector. Our specialized focus on
-                    Body-in-White (BIW) and Powertrain fixtures ensures precision, quality, and reliability for automotive manufacturers.
-                </p>
-                <p class="text-slate-700">
-                    Our state-of-the-art facilities are equipped with advanced machinery and operated by skilled professionals who
-                    understand the critical requirements of the automotive industry.
-                </p>
+                <!-- LEFT: Text -->
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+                        Automotive Manufacturing Excellence
+                    </h2>
+                    <p class="text-slate-700 mb-2">We manufacture &amp; assemble Automotive fixtures. (BIW &amp; Powertrain).</p>
+                    <p class="text-slate-700 mb-2">
+                        Topgrip Industries brings decades of manufacturing expertise to the automotive sector. Our specialized focus on
+                        Body-in-White (BIW) and Powertrain fixtures ensures precision, quality, and reliability for automotive manufacturers.
+                    </p>
+                    <p class="text-slate-700">
+                        Our state-of-the-art facilities are equipped with advanced machinery and operated by skilled professionals who
+                        understand the critical requirements of the automotive industry.
+                    </p>
 
-                <div class="mt-6">
-                <h3 class="text-xl font-semibold text-slate-900 mb-3">Our Automotive Capabilities</h3>
-                <ul class="divide-y divide-slate-200 bg-white rounded-2xl border border-slate-200 overflow-hidden">
-                    <li class="py-3 px-4 text-slate-700"><span class="font-semibold">BIW Fixtures:</span> Precision fixtures for Body-in-White assembly</li>
-                    <li class="py-3 px-4 text-slate-700"><span class="font-semibold">Powertrain Fixtures:</span> Specialized fixtures for engine and transmission assembly</li>
-                    <li class="py-3 px-4 text-slate-700"><span class="font-semibold">Custom Solutions:</span> Tailored fixtures to meet specific manufacturing requirements</li>
-                    <li class="py-3 px-4 text-slate-700"><span class="font-semibold">Quality Assurance:</span> ISO 9001:2015 certified processes</li>
-                    <li class="py-3 px-4 text-slate-700"><span class="font-semibold">Assembly Services:</span> Complete assembly and testing capabilities</li>
-                </ul>
-                </div>
-            </div>
-
-            <!-- RIGHT: Image -->
-            <div class="lg:sticky lg:top-24">
-                <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-white">
-                <img
-                    src="assets/images/auto-motive/auto_1.jpg"
-                    alt="Automotive manufacturing facility"
-                    class="w-full h-[260px] sm:h-[340px] lg:h-[460px] object-cover"
-                />
+                    <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-3">Our Automotive Capabilities</h3>
+                    <ul class="divide-y divide-slate-200 bg-white rounded-2xl border border-slate-200 overflow-hidden">
+                        <li class="py-3 px-4 text-slate-700"><span class="font-semibold">BIW Fixtures:</span> Precision fixtures for Body-in-White assembly</li>
+                        <li class="py-3 px-4 text-slate-700"><span class="font-semibold">Powertrain Fixtures:</span> Specialized fixtures for engine and transmission assembly</li>
+                        <li class="py-3 px-4 text-slate-700"><span class="font-semibold">Custom Solutions:</span> Tailored fixtures to meet specific manufacturing requirements</li>
+                        <li class="py-3 px-4 text-slate-700"><span class="font-semibold">Quality Assurance:</span> ISO 9001:2015 certified processes</li>
+                        <li class="py-3 px-4 text-slate-700"><span class="font-semibold">Assembly Services:</span> Complete assembly and testing capabilities</li>
+                    </ul>
+                    </div>
                 </div>
 
-                <!-- Optional small caption -->
-                <p class="mt-3 text-sm text-slate-500">
-                Advanced fixtures and assembly solutions for BIW &amp; Powertrain applications.
-                </p>
-            </div>
+                <!-- RIGHT: Image -->
+                <div class="lg:sticky lg:top-24">
+                    <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-white">
+                    <img src="assets/images/auto-motive/auto_1.jpg" alt="Automotive manufacturing facility"
+                        class="w-full h-[260px] sm:h-[340px] lg:h-[460px] object-cover"
+                    />
+                    </div>
 
+                    <!-- Optional small caption -->
+                    <p class="mt-3 text-sm text-slate-500">
+                    Advanced fixtures and assembly solutions for BIW &amp; Powertrain applications.
+                    </p>
+                </div>
+
+                </div>
             </div>
-        </div>
         </section>
 
         <!-- ✅ Tabs + Content + Image Grid (Tailwind) | JSON-driven -->
@@ -219,7 +217,6 @@
 
             render();
         </script>
-
 
         <!-- Features Section -->
         <section class="py-16 bg-white">
