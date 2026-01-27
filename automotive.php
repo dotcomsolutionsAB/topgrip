@@ -111,14 +111,22 @@
                     text:
                         "When it comes to assembly of the powertrain, one of the most important aspects is something that tends to get far less attention is: fixturing. The fixturing that holds these components in place during assembly must not only provide precise manufacturing but they must be sufficiently robust to keep the components in line.We have worked with powertrain fixture manufacturers in the United States & Germany.",
                     images: [
-                        { src: "assets/images/powertrain/1.jpg", alt: "Powertrain fixture" },
-                        { src: "assets/images/powertrain/2.jpg", alt: "Powertrain components" },
-                        { src: "assets/images/powertrain/3.jpg", alt: "Powertrain tooling" },
-                        { src: "assets/images/powertrain/4.jpg", alt: "Machined part" },
-                        { src: "assets/images/powertrain/5.jpg", alt: "Precision parts" },
-                        { src: "assets/images/powertrain/6.jpg", alt: "Assembly jig" },
-                        { src: "assets/images/powertrain/7.jpg", alt: "Automation cell" },
-                        { src: "assets/images/powertrain/8.jpg", alt: "Fixture base" }
+                        { src: "assets/images/auto-motive/tab1/image1.jpg", alt: "Powertrain fixture" },
+                        { src: "assets/images/auto-motive/tab1/image2.jpg", alt: "Powertrain components" },
+                        { src: "assets/images/auto-motive/tab1/image3.jpg", alt: "Powertrain tooling" },
+                        { src: "assets/images/auto-motive/tab1/image4.jpg", alt: "Machined part" },
+                        { src: "assets/images/auto-motive/tab1/image5.jpg", alt: "Precision parts" },
+                        { src: "assets/images/auto-motive/tab1/image6.jpg", alt: "Assembly jig" },
+                        { src: "assets/images/auto-motive/tab1/image7.jpg", alt: "Automation cell" },
+                        { src: "assets/images/auto-motive/tab1/image8.jpg", alt: "Fixture base" },
+                        { src: "assets/images/auto-motive/tab1/image9.jpg", alt: "Powertrain assembly" },
+                        { src: "assets/images/auto-motive/tab1/image10.jpg", alt: "Engine components" },
+                        { src: "assets/images/auto-motive/tab1/image11.jpg", alt: "Transmission parts" },
+                        { src: "assets/images/auto-motive/tab1/image12.jpg", alt: "Final inspection" },
+                        { src: "assets/images/auto-motive/tab1/image13.jpg", alt: "CNC machining" },
+                        { src: "assets/images/auto-motive/tab1/image14.jpg", alt: "Welded assembly" },
+                        { src: "assets/images/auto-motive/tab1/image15.jpg", alt: "Quality check" },
+                        { src: "assets/images/auto-motive/tab1/image16.jpg", alt: "Finished product" }
                     ]
                 },
                 {

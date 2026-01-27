@@ -4,7 +4,7 @@
     <?php include 'inc/slider.php'; ?>
 
     <!-- Feature Section 1 -->
-    <section class="py-16 bg-gray-50">
+    <!-- <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="flex flex-col justify-center bg-white rounded-2xl shadow p-8">
@@ -19,11 +19,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Main CTA Section -->
-    <section class="py-16 bg-slate-900">
-        <div class="max-w-3xl mx-auto px-4 text-center">
+    <section class="py-16 bg-slate-900 mt-4">
+        <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">We work on the forefront of innovation and technology</h2>
             <p class="text-lg text-slate-200 mb-6">We take products from an idea all the way to the end consumer. Request a quote.</p>
             <a href="get-quote" class="inline-block px-8 py-3 rounded-xl border border-white text-white font-semibold hover:bg-white hover:text-slate-900 transition">Request a quote</a>
