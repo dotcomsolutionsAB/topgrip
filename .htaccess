@@ -2,25 +2,22 @@
 # Apache configuration for better SEO and performance
 
 # Enable Rewrite Engine
+# Enable Rewrite Engine (extensionless PHP)
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Stop Apache content-negotiation from breaking extensionless URLs
+    # Prevent MultiViews from hijacking extensionless URLs
     <IfModule mod_negotiation.c>
         Options -MultiViews
     </IfModule>
 
-    RewriteBase /topgrip/
+    # 1) Redirect /about.php -> /about (canonical)
+    RewriteCond %{THE_REQUEST} \s/+(.*)\.php[\s?] [NC]
+    RewriteRule ^ %1 [R=301,L]
 
-    # 1) Canonical redirect: /topgrip/about.php -> /topgrip/about
-    RewriteCond %{THE_REQUEST} \s/+topgrip/([^.]+)\.php[\s?] [NC]
-    RewriteRule ^ %1 [R=301,L,NC]
-
-    # 2) Internal rewrite: /topgrip/about -> /topgrip/about.php
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{DOCUMENT_ROOT}/topgrip/$1.php -f
-    RewriteRule ^(.+)$ $1.php [L]
+    # 2) Internally serve /about -> /about.php (only if the php file exists)
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.+?)/?$ $1.php [L]
 </IfModule>
 
 

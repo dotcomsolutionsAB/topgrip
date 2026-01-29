@@ -38,7 +38,7 @@
         "availableLanguage": ["en", "hi"]
       },
       "sameAs": [
-        "https://www.linkedin.com/company/topgrip"
+        "https://www.linkedin.com/company/topgrip-industries/?viewAsMember=true"
       ],
       "aggregateRating": {
         "@type": "AggregateRating",

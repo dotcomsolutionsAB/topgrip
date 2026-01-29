@@ -77,7 +77,7 @@
             <i class="fa-solid fa-share-nodes text-slate-700"></i>
             Follow Us
           </h3>
-          <a href="https://www.linkedin.com/company/topgrip" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/company/topgrip-industries/?viewAsMember=true" target="_blank" rel="noopener noreferrer"
              class="inline-flex items-center gap-2 text-blue-600 hover:underline font-semibold">
             <i class="fa-brands fa-linkedin text-xl"></i>
             LinkedIn
