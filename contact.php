@@ -53,10 +53,10 @@
               <i class="fa-solid fa-phone text-slate-500 mt-1"></i>
               <span><span class="font-semibold">Phone:</span> <a href="tel:+9104023075253" class="hover:underline">+91 040 23075253</a></span>
             </li>
-            <li class="flex items-start gap-3">
+            <!-- <li class="flex items-start gap-3">
               <i class="fa-solid fa-mobile-screen-button text-slate-500 mt-1"></i>
               <span><span class="font-semibold">Mobile:</span> <a href="tel:+919885287010" class="hover:underline">+91 9885287010</a></span>
-            </li>
+            </li> -->
             <li class="flex items-start gap-3">
               <i class="fa-solid fa-envelope text-slate-500 mt-1"></i>
               <span><span class="font-semibold">Email:</span> <a href="mailto:info@topgrip.co.in" class="hover:underline">info@topgrip.co.in</a></span>
